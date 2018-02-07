@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.baraa.bsoft.sabehapp.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imgCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgReset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:src="@drawable/sebha"/>
+    <ImageView
+        android:id="@+id/imgReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:onClick="resetCounter"
+        android:src="@drawable/ic_rotate_right_black_24dp"/>
+
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_alignTop="@+id/imgCounter"
+        android:layout_below="@+id/imgReset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:fontFamily="@font/graduate"
+        android:text="00000"
+        android:textColor="@android:color/white"
+        android:textSize="44sp" />
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/imgCounter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#e39f02"
+        android:onClick="incrementCounter"
+        android:text="@string/counter_button"
+        android:textColor="@android:color/white"
+        android:textSize="24dp"/>
+</RelativeLayout>
+</ScrollView>
+

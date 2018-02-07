@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sabeh App</string>
+    <string name="counter_button">count</string>
+</resources>
